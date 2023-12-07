@@ -13,10 +13,10 @@ async function getUsers() {
           <h5 class="card-title text-center"></h5>
       </div>
       <ul class="list-group list-group-flush">
-          <li class="list-group-item">Primary Info <i class="bi bi-key"></i>:<span>${card?.name}</span></li>
-          <li class="list-group-item">Address Info <i class="bi bi-globe2"></i>:<span>${card?.address.street}</span></li>
-          <li class="list-group-item">Company Info <i class="bi bi-building"></i>:<span>${card?.company.name}</span></li>
-          <li class="list-group-item">Contact Info <i class="bi bi-phone"></i>:<span>${card?.email}</span></li>
+          <li class="list-group-item">Primary Info <i class="bi bi-key"></i>:<span> ${card?.name}, Username ${card?.username}</span></li>
+          <li class="list-group-item">Address Info <i class="bi bi-globe2"></i>:<span> ${card?.address.street}, ${card?.address.suite}, ${card?.address.city}, ${card?.address.zipcode}</span></li>
+          <li class="list-group-item">Company Info <i class="bi bi-building"></i>:<span> ${card?.company.name}, ${card?.company.catchPhrase}</span></li>
+          <li class="list-group-item">Contact Info <i class="bi bi-phone"></i>:<span> ${card?.email}, ${card?.phone}, ${card?.website}</span></li>
       </ul>
   </div>`;
     }
