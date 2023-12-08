@@ -51,7 +51,9 @@ async function getUsers() {
     let arr = "";
     for (let i = 0; i < data.length; i++) {
       const card = data[i];
+      const img = images[i];
       arr += `<div class="card my-3" style="width: 18rem;">
+      <img src="${img.img}" class="card-img-top img-fluid" alt="user image">
       <div class="card-body">
           <h5 class="card-title text-center"></h5>
       </div>
