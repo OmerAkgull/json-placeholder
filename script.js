@@ -1,3 +1,46 @@
+let images = [
+  {
+    id: 1,
+    img: "https://images.pexels.com/photos/762080/pexels-photo-762080.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+  },
+  {
+    id: 2,
+    img: "https://images.pexels.com/photos/927451/pexels-photo-927451.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+  },
+  {
+    id: 3,
+    img: "https://images.pexels.com/photos/1035682/pexels-photo-1035682.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+  },
+  {
+    id: 4,
+    img: "https://images.pexels.com/photos/806835/pexels-photo-806835.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+  },
+  {
+    id: 5,
+    img: "https://images.pexels.com/photos/920377/pexels-photo-920377.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+  },
+  {
+    id: 6,
+    img: "https://images.pexels.com/photos/1197132/pexels-photo-1197132.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+  },
+  {
+    id: 7,
+    img: "https://images.pexels.com/photos/428340/pexels-photo-428340.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+  },
+  {
+    id: 8,
+    img: "https://images.pexels.com/photos/840916/pexels-photo-840916.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+  },
+  {
+    id: 9,
+    img: "https://images.pexels.com/photos/206593/pexels-photo-206593.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+  },
+  {
+    id: 10,
+    img: "https://images.pexels.com/photos/1236678/pexels-photo-1236678.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+  },
+];
+
 const cardsRow = document.querySelector("#cardsRow");
 
 async function getUsers() {
@@ -8,7 +51,7 @@ async function getUsers() {
     let arr = "";
     for (let i = 0; i < data.length; i++) {
       const card = data[i];
-      arr += `<div class="card" style="width: 18rem;">
+      arr += `<div class="card my-3" style="width: 18rem;">
       <div class="card-body">
           <h5 class="card-title text-center"></h5>
       </div>
@@ -24,6 +67,6 @@ async function getUsers() {
     cardsRow.innerHTML = arr;
   }
   showUsers();
-};
+}
 
 getUsers();
