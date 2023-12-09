@@ -8,7 +8,7 @@ async function getPosts() {
   const response = await fetch(
     `https://jsonplaceholder.typicode.com/posts?userId=${myParam}`
   );
-  data = await response.json;
+  data = await response.json();
 
   function showPosts() {
     let arr = "";
