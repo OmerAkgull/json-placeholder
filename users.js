@@ -62,6 +62,7 @@ async function getUsers() {
           <li class="list-group-item">Address Info <i class="bi bi-globe2"></i>:<span> ${card?.address.street}, ${card?.address.suite}, ${card?.address.city}, ${card?.address.zipcode}</span></li>
           <li class="list-group-item">Company Info <i class="bi bi-building"></i>:<span> ${card?.company.name}, ${card?.company.catchPhrase}</span></li>
           <li class="list-group-item">Contact Info <i class="bi bi-phone"></i>:<span> ${card?.email}, ${card?.phone}, ${card?.website}</span></li>
+          <li class="list-group-item"> <a href="posts.html?userId=${i+1}">Click for posts!</a></li>
       </ul>
   </div>`;
     }
